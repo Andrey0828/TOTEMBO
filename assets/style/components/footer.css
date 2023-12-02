@@ -1,0 +1,153 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 87px;
+    background: var(--primaryColor);
+}
+
+.footer__content-main-title {
+    color: var(--whiteColor);
+    font-family: var(--mon);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px; /* 71.875% */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-right: 160px;
+}
+
+.footer__content-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__content-main-link {
+    color: var(--whiteColor);
+    font-family: var(--mon);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+.footer__content-main-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__content-products-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__content-products-title {
+    color: var(--whiteColor);
+    font-family: var(--mon);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.kontaks-number {
+    display: flex;
+    gap: 10px;
+}
+
+.kontaks-descr {
+    color: var(--whiteColor);
+    font-family: var(--mon);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: all-small-caps;
+}
+
+.kontaks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__content-messenger-title {
+    color: var(--whiteColor);
+    font-family: var(--mon);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 2.5px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.messengers {
+    display: flex;
+    gap: 26px;
+}
+
+.footer__content {
+    display: flex;
+}
+
+.footer__content-products {
+    margin-right: 217px;
+}
+
+.messengers img {
+    transition: .5s;
+}
+
+.messengers img:hover {
+    transform: scale(1.1);
+}
+
+.footer__content-main-link:hover {
+    color: #13e2b9;
+}
+
+@media (max-width: 1199.99px) {
+
+    .footer__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .footer__content-products {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+}
+
+@media (max-width: 575.99px) {
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer__content-products {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .kontaks-descr {
+        font-size: 15px;
+    }
+
+
+}
